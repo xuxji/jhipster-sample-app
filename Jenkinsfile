@@ -14,8 +14,8 @@ node {
         checkout scm
     }
 
-    stage('npm install') {
-        sh "npm install"
+    stage('cnpm install') {
+        sh "cnpm install"
     }
 
     stage('clean') {
