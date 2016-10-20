@@ -8,7 +8,7 @@ node {
         sh "npm -v"
         sh "bower -v"
         sh "gulp -v"
-        sh "npm install -g cnpm"
+        sh "cnpm -v"
     }
 
     stage('checkout') {
@@ -16,7 +16,7 @@ node {
     }
 
     stage('cnpm install') {
-        sh "npm install"
+        sh "cnpm install"
     }
 
     stage('clean') {
