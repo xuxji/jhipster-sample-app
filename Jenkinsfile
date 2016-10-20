@@ -8,7 +8,7 @@ node {
         sh "npm -v"
         sh "bower -v"
         sh "gulp -v"
-        sh "npm --registry http://registry.cnpmjs.org"
+        sh "npm install -g cnpm"
     }
 
     stage('checkout') {
