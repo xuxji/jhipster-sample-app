@@ -15,7 +15,7 @@ node {
     }
 
     stage('cnpm install') {
-        sh "cnpm install"
+        sh "npm install"
     }
 
     stage('clean') {
