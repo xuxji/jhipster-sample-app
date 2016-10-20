@@ -8,15 +8,14 @@ node {
         sh "npm -v"
         sh "bower -v"
         sh "gulp -v"
-        sh "npm install -g cnpm"
     }
 
     stage('checkout') {
         checkout scm
     }
 
-    stage('cnpm install') {
-        sh "cnpm install"
+    stage('npm install') {
+        sh "npm install"
     }
 
     stage('clean') {
