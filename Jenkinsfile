@@ -8,7 +8,7 @@ node {
         sh "npm -v"
         sh "bower -v"
         sh "gulp -v"
-        sh "cnpm -v"
+        sh "npm install -g cnpm"
     }
 
     stage('checkout') {
